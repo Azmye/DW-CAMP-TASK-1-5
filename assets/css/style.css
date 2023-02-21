@@ -116,6 +116,10 @@ nav .container {
   font-weight: 500;
 }
 
+#about .btn-downcv:hover > span {
+  color: #ff4500;
+}
+
 #about .socials a {
   background-color: #000000e6;
   color: #fff;
