@@ -38,6 +38,10 @@ nav .container {
   margin-right: 16px;
 }
 
+.nav-left li:hover {
+  color: #ff4500;
+}
+
 .nav-right a {
   background-color: #000000e6;
   color: #fff;
@@ -45,6 +49,10 @@ nav .container {
   border-radius: 5px;
   font-size: 16px;
   font-weight: 500;
+}
+
+.nav-right a:hover {
+  color: #ff4500;
 }
 
 /* About Section */
@@ -96,6 +104,10 @@ nav .container {
   font-weight: 500;
 }
 
+#about .btn-contact:hover {
+  color: #ff4500;
+}
+
 #about .btn-downcv {
   color: #000000e6;
   padding: 6px 12px;
@@ -111,6 +123,9 @@ nav .container {
   border-radius: 100px;
   text-align: center;
   margin-right: 10px;
+}
+#about .socials a:hover {
+  color: #ff4500;
 }
 
 #about .socials i {
