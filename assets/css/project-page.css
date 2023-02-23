@@ -1,0 +1,272 @@
+body {
+  background-color: #ddd;
+}
+
+/* project lists */
+#project-lists {
+  background-color: #fff;
+}
+
+#project-lists .container {
+  width: 950px;
+  margin: 0 auto;
+}
+
+#project-lists .container h1 {
+  text-align: center;
+  padding: 40px 0;
+  margin: 0;
+}
+
+#project-lists .container .lists {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 50px;
+}
+
+/* Project Card */
+#project-lists .project-card {
+  flex-basis: 30%;
+  box-shadow: 0 0 36px #bbb;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 15.8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#project-lists .project-card .head {
+  width: 100%;
+}
+
+#project-lists .project-card .head img {
+  border-radius: 5px;
+}
+
+#project-lists .project-card h3 {
+  font-size: 15px;
+  margin: 0;
+  margin-top: 5px;
+}
+
+#project-lists .project-card p {
+  font-size: 13px;
+  margin: 0;
+  margin-bottom: 10px;
+  color: #bbb;
+}
+
+#project-lists .project-card p:nth-child(3) {
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+}
+
+#project-lists .project-card .icons ul {
+  display: flex;
+  padding: 0;
+}
+
+#project-lists .project-card .icons ul i {
+  font-size: 24px;
+  margin-right: 8px;
+}
+
+#project-lists .project-card .buttons {
+  display: flex;
+  gap: 10px;
+}
+
+#project-lists .project-card .buttons button {
+  width: 50%;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: #fff;
+  border-radius: 5px;
+}
+
+/* Project Form */
+#project-form .container {
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 50px;
+  padding-bottom: 30px;
+}
+
+#project-form .container h1 {
+  text-align: center;
+}
+
+#project-form .container form {
+  width: 450px;
+  margin: 0 auto;
+}
+
+#project-form .container label {
+  font-weight: 500;
+}
+
+#project-form .container input,
+textarea {
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 2px solid #fff;
+  outline: none;
+  box-shadow: 0 0 36px #bbb;
+  font-size: 15px;
+}
+
+#project-form .container input:hover,
+textarea:hover {
+  border: 2px solid #ff4500;
+}
+
+#project-form .container input[type='text'],
+textarea {
+  width: 100%;
+}
+
+#project-form .container .date-inputs {
+  display: flex;
+  gap: 10px;
+}
+
+#project-form .container .date-input div {
+  flex: 50%;
+}
+
+#project-form .container input[type='date'] {
+  width: 100%;
+}
+
+#project-form .container .desc-input textarea {
+  resize: vertical;
+  height: 100px;
+}
+
+#project-form .container .techIco {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px 0;
+}
+
+#project-form .container .techIco div {
+  width: 50%;
+}
+
+#project-form .container .imageUploadInput {
+  position: relative;
+}
+
+#project-form .container .imageUploadInput i {
+  align-items: center;
+  position: absolute;
+  right: 8px;
+  bottom: 30px;
+}
+
+#project-form .container .imageUploadInput input[type='file'] {
+  padding: 0;
+  width: 100%;
+  background-color: #fff;
+  color: rgba(0, 0, 0, 0);
+}
+
+#project-form .container .imageUploadInput input[type='file']::file-selector-button {
+  background-color: #eee;
+  font-size: 16px;
+  padding: 10px;
+  border: none;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+#project-form .btn-submit {
+  text-align: end;
+}
+
+#project-form .btn-submit input {
+  background-color: #000000e6;
+  color: #fff;
+  margin-top: 20px;
+  border: none;
+  padding: 6px 24px;
+  border-radius: 120px;
+}
+
+/* Project Details */
+#project-details .container {
+  width: 950px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+#project-details h1 {
+  text-align: center;
+  font-size: 28px;
+}
+
+#project-details .head {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  margin-bottom: 50px;
+}
+
+#project-details .head-img {
+  width: 60%;
+}
+
+#project-details .head-desc {
+  width: 40%;
+}
+
+#project-details .head-desc li {
+  font-size: 16px;
+}
+
+#project-details .project-duration {
+  margin-bottom: 30px;
+}
+
+#project-details .project-duration ul {
+  padding: 0;
+}
+
+#project-details .project-duration li {
+  margin-bottom: 10px;
+}
+
+#project-details .project-duration li i {
+  margin-right: 5px;
+}
+
+#project-details .project-duration h3 {
+  font-weight: 500;
+  margin: 0;
+}
+
+#project-details .project-tech ul {
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  padding-right: 100px;
+}
+
+#project-details .project-tech h3 {
+  font-weight: 500;
+  margin: 0;
+}
+
+#project-details .project-tech li {
+  flex: 50%;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+#project-details .body p {
+  text-align: justify;
+  margin: 2px;
+}

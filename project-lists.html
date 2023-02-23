@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/@coreui/icons/css/all.min.css" />
+    <title>Home</title>
+    <link rel="stylesheet" href="assets/css/project-page.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav>
+      <div class="container">
+        <div class="nav-left">
+          <ul class="nav-menu">
+            <li>
+              <a href="index.html" style="display: flex; align-items: center">
+                <img src="assets/img/brandred.png" alt="" style="width: 32px" />
+              </a>
+            </li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="project-lists.html" style="font-weight: bold; color: #ff4500">My Project</a></li>
+          </ul>
+        </div>
+        <div class="nav-right">
+          <a href="contact-me.html">Contact Me</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Project Form -->
+    <section id="project-form">
+      <div class="container">
+        <h1>ADD MY PROJECT</h1>
+        <form>
+          <div>
+            <label for="name">Project Name</label>
+            <input type="text" name="name" id="name" required />
+          </div>
+
+          <div class="date-inputs">
+            <div>
+              <label for="startDate">Start Date</label>
+              <input type="date" name="startDate" id="startDate" required />
+            </div>
+            <div>
+              <label for="endDate">End Date</label>
+              <input type="date" name="endDate" id="endDate" required />
+            </div>
+          </div>
+
+          <div class="desc-input">
+            <label for="desc">Description</label>
+            <textarea name="desc" id="desc" required></textarea>
+          </div>
+
+          <div class="tech-ico-inputs">
+            <label>Technologies</label>
+            <div class="techIco">
+              <div>
+                <input type="checkbox" name="nodeJsIco" id="nodeJsIco" />
+                <label for="nodeJsIco">Node Js</label>
+              </div>
+              <div>
+                <input type="checkbox" name="nextJs" id="nextJs" />
+                <label for="nextJs">Next Js</label>
+              </div>
+              <div>
+                <input type="checkbox" name="reactJs" id="reactJs" />
+                <label for="reactJs">React Js</label>
+              </div>
+              <div>
+                <input type="checkbox" name="typeScript" id="typeScript" />
+                <label for="typeScript">TypeScript</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="imageUploadInput">
+            <label for="imageUpload">Upload Image</label>
+            <i class="fa-solid fa-paperclip fa-lg"></i>
+            <input type="file" name="imageUpload" id="imageUpload" required />
+          </div>
+
+          <div class="btn-submit">
+            <input type="submit" value="submit" />
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- Project Lists -->
+    <section id="project-lists">
+      <div class="container">
+        <h1>MY PROJECT</h1>
+        <div id="projectLists" class="lists">
+          <div class="project-card">
+            <div class="head">
+              <img src="assets/img/projects/dummy.avif" alt="" style="width: 100%" />
+            </div>
+            <div class="body">
+              <h3>Dumbways Mobile App - 2021</h3>
+              <p>Duration : 3 moonths</p>
+              <p>App that used for dumbways student, it was deployed and can downloaded on playstore. Happy donwload</p>
+              <div class="icons">
+                <ul>
+                  <li><i class="cib-next-js"></i></li>
+                  <li><i class="cib-react"></i></li>
+                  <li><i class="fa-brands fa-node-js"></i></li>
+                  <li><i class="cib-typescript"></i></li>
+                </ul>
+              </div>
+
+              <div class="buttons">
+                <button>edit</button>
+                <button>delete</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="assets/js/project-form.js"></script>
+  </body>
+</html>

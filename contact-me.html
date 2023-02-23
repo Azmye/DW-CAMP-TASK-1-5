@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/contact-form.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav>
+      <div class="container">
+        <div class="nav-left">
+          <ul class="nav-menu">
+            <li>
+              <a href="index.html" style="display: flex; align-items: center">
+                <img src="assets/img/brandred.png" alt="" style="width: 32px" />
+              </a>
+            </li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="project-lists.html">My Project</a></li>
+          </ul>
+        </div>
+        <div class="nav-right">
+          <a href="contact-me.html">Contact Me</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Contact Form -->
+    <section id="contact">
+      <h1>GET IN TOUCH</h1>
+      <form>
+        <div>
+          <label for="name">Name</label>
+          <input type="text" name="name" id="name" required />
+        </div>
+
+        <div>
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" required />
+        </div>
+
+        <div>
+          <label for="phoneNumber">Phone Number</label>
+          <input type="text" name="phoneNumber" id="phoneNumber" required />
+        </div>
+
+        <div>
+          <label for="subject">Subject</label>
+          <select name="subject" id="subject" required>
+            <option value="" style="display: none"></option>
+            <option value="Hiring">Hiring</option>
+            <option value="Discussion">Discussion</option>
+            <option value="Collaboration">Collaboration</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="clientMessage">Your Message</label>
+          <textarea name="clientMessage" id="clientMessage" required></textarea>
+        </div>
+
+        <div>
+          <input class="btn-submit" type="submit" value="Submit" required />
+        </div>
+      </form>
+    </section>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
