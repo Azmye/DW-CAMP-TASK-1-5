@@ -193,6 +193,9 @@ textarea {
   padding: 6px 24px;
   border-radius: 120px;
 }
+#project-form .btn-submit input:hover {
+  border: none;
+}
 
 /* Project Details */
 #project-details .container {
