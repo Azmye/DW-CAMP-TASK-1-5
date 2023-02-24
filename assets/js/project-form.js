@@ -2,17 +2,6 @@ let datas = [];
 const form = document.querySelector('form');
 const projectLists = document.querySelector('#projectLists');
 
-const differenceInMonths = (date_1, date_2) => {
-  let date1 = new Date(date_1);
-  let date2 = new Date(date_2);
-  const monthDiff = date1.getMonth() - date2.getMonth();
-  const yearDiff = date1.getYear() - date2.getYear();
-
-  let difference = Math.abs(monthDiff + yearDiff * 12);
-
-  return difference;
-};
-
 const getData = (form) => {
   let data = {
     projectName: form.name.value,
@@ -58,6 +47,17 @@ const generateCardTemplate = (data) => {
 </div>`;
 
   return projectCard;
+};
+
+const differenceInMonths = (date_1, date_2) => {
+  let date1 = new Date(date_1);
+  let date2 = new Date(date_2);
+  const monthDiff = date1.getMonth() - date2.getMonth();
+  const yearDiff = date1.getYear() - date2.getYear();
+
+  let difference = Math.abs(monthDiff + yearDiff * 12);
+
+  return difference;
 };
 
 const updateUI = () => {
