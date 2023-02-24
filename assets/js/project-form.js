@@ -52,12 +52,10 @@ const generateCardTemplate = (data) => {
 const differenceInMonths = (date_1, date_2) => {
   let date1 = new Date(date_1);
   let date2 = new Date(date_2);
-  const monthDiff = date1.getMonth() - date2.getMonth();
-  const yearDiff = date1.getYear() - date2.getYear();
+  const monthDiff = date2.getMonth() - date1.getMonth();
+  const yearDiff = date2.getYear() - date1.getYear();
 
-  let difference = Math.abs(monthDiff + yearDiff * 12);
-
-  return difference;
+  return monthDiff + yearDiff * 12;
 };
 
 const updateUI = () => {
