@@ -29,7 +29,7 @@ const generateCardTemplate = (data) => {
   <div class="body">
     <h3>${data.projectName} - ${new Date(data.endDate).getFullYear()}</h3>
     <p>Duration : ${data.duration <= 0 ? 'Less than a month' : `${data.duration === 1 ? `${data.duration} month` : `${data.duration} months`}`} </p>
-    <p>App that used for dumbways student, it was deployed and can downloaded on playstore. Happy donwload</p>
+    <p>${data.description}</p>
     <div class="icons">
       <ul>
         ${data.icons.nextJs ? '<li><i class="cib-next-js"></i></li>' : ''}
